@@ -7,8 +7,8 @@
     "database": "rentars",
     "entities": ["dist/**/entities/*{.ts,.js}"],
     "synchronize": true,
-    "migrations": ["src/migrations/*{.ts,.js}"],
+    "migrations": ["dist/migrations/*{.ts,.js}"],
     "cli": {
-        "migrationsDir": "src/migrations"
+      "migrationsDir": "src/migrations"
     }
-}
+  }
