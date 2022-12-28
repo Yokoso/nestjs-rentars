@@ -1,9 +1,9 @@
+.env
+/vars
+
 # compiled output
 /dist
 /node_modules
-
-# data
-.env
 
 # Logs
 logs
