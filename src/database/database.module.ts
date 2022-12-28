@@ -2,10 +2,10 @@ import { Module } from "@nestjs/common";
 import { Connection } from "typeorm";
 import { TypeOrmModule } from "@nestjs/typeorm";
 
-import { typeOrmConfig } from "../config/typeorm.config";
+import { typeOrmConfigAsync } from "../config/typeorm.config";
 
 @Module({
-    imports: [TypeOrmModule.forRoot(typeOrmConfig)],
+    imports: [TypeOrmModule.forRootAsync(typeOrmConfigAsync)],
     exports: [TypeOrmModule]
 })
 export class DatabaseModule {
