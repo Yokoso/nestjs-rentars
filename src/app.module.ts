@@ -14,8 +14,8 @@ import { ComponentsModule } from "./components/components.module";
     DatabaseModule, 
     GraphQLModule.forRoot({
       driver: ApolloDriver,
-      playground: (process.env.NODE_ENV === "development" && true) || false,
-      debug: (process.env.NODE_ENV === "development" && true) || false,
+      playground: true /* (process.env.NODE_ENV === "development" && true) || false */,
+      debug: true,
       autoSchemaFile: true,
     }) ,
     ComponentsModule,
