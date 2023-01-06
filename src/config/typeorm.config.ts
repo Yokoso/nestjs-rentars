@@ -10,8 +10,9 @@ export default class TypeOrmConfig {
             username: configService.get('DB_USERNAME'),
             password: configService.get('DB_PASSWORD'),
             database: configService.get('DB_NAME'),
-            entities: [],
-            synchronize: true
+            entities: ["dist/**/entities/*{.ts,.js}"],
+            synchronize: true,
+            migrations: ["src/migrations/*{.ts,.js}"],
         }
     }
 }
